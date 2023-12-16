@@ -50,7 +50,9 @@ The factorial of the first #count integers is:
 )
 ```
 The following can be generated:
-![Output of Typst example](./images/example.png?raw=true)
+<div align="center"> 
+![Output of Typst](./images/example.png)
+</div>
 ## How to use?
 Clone the repo:
 ```bash
