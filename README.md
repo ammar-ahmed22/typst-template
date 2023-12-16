@@ -7,7 +7,47 @@ Typst is a newly created typesetting language which combines the ease of Markdow
 ### Example of the Power of Typst
 Using this markup:
 ```typst
+= Factorial 
+The factorial of a number, $n$, is expressed as $n!$. It is mathematically defined through recurrence, where, $n! = n times (n - 1)!$. So, for $n = 5$:
+$ 
+  5! &= 5 times (5 - 1)! \
+  &= 5 times 4! \
+  4! &= 4 times (4 - 1)!\
+  &= 4 times 3! \
+  3! &= 3 times (3 - 1)!\
+  &= 3 times 2!\
+  2! &= 2 times (2 - 1)!\
+  &= 2 times 1! = 2 times 1 = 2\   
+$
 
+Thus,
+$ 
+  3! &= 3 times 2! = 3 times 2 times 1 \
+  4! &= 4 times 3! = 4 times 3 times 2 times 1 \
+  5! &= 5 times 4! = 5 times 4 times 3 times 1 \
+  &= 120
+$
+#let count = 10
+#let nums = range(1, count + 1)
+#let factorial(n) = {
+  if n <= 1 { 1 }
+  else {
+    let result = 1
+    for i in range(2, n + 1){
+      result = result * i
+    }
+    result
+   }
+}
+
+The factorial of the first #count integers is:
+#align(center, 
+  table(
+    columns: count,
+    ..nums.map(n => [*$#n!$*]),
+    ..nums.map(n => str(factorial(n)))
+  )
+)
 ```
 The following can be generated:
 
