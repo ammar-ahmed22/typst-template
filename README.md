@@ -51,7 +51,7 @@ The factorial of the first #count integers is:
 ```
 The following can be generated:
 <div align="center"> 
-<image src="./images/example.png">
+<image src="./images/example.png" width="100%">
 </div>
 ## How to use?
 Clone the repo:
