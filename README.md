@@ -57,7 +57,7 @@ The following can be generated:
 ## How to use?
 Clone the repo:
 ```bash
-git clone URL my-project
+git clone https://github.com/ammar-ahmed22/typst-template.git my-project
 ```
 
 Change directory:
