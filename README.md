@@ -50,7 +50,7 @@ The factorial of the first #count integers is:
 )
 ```
 The following can be generated:
-
+![Output of Typst example](./images/example.png?raw=true)
 ## How to use?
 Clone the repo:
 ```bash
